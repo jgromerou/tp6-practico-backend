@@ -20,7 +20,7 @@ const ItemReceta = ({ receta, setRecetas }) => {
       cancelButtonText: 'Cancelar',
     }).then((result) => {
       if (result.isConfirmed) {
-        consultaBorrarReceta(receta.id).then((respuesta) => {
+        consultaBorrarReceta(receta._id).then((respuesta) => {
           if (respuesta && respuesta.status === 200) {
             Swal.fire(
               'Receta eliminada',
@@ -44,14 +44,14 @@ const ItemReceta = ({ receta, setRecetas }) => {
 
   return (
     <tr>
-      <td className="tamanioCeldaFijo">{receta.id}</td>
+      <td className="tamanioCeldaFijo">{receta._id}</td>
       <td className="tamanioCelda text-truncate">{receta.nombreReceta}</td>
       <td className="tamanioCelda text-truncate">{receta.imagen}</td>
       <td className="tamanioCeldaFijo">{receta.categoria}</td>
       <td className="tamanioCeldaOpciones text-center">
         <Link
           className="btn btn-warning my-2 my-lg-0 me-lg-2"
-          to={'/administrador/editar-receta/' + receta.id}
+          to={'/administrador/editar-receta/' + receta._id}
         >
           <i className="bi bi-pencil p-1"></i>
         </Link>
