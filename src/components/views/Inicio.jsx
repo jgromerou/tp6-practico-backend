@@ -1,7 +1,7 @@
-import { Container, Row } from "react-bootstrap";
-import CardReceta from "./receta/CardReceta";
-import { obtenerListaRecetas } from "../helpers/queries";
-import { useEffect, useState } from "react";
+import { Container, Row } from 'react-bootstrap';
+import CardReceta from './receta/CardReceta';
+import { obtenerListaRecetas } from '../helpers/queries';
+import { useEffect, useState } from 'react';
 
 const Inicio = () => {
   const [recetas, setRecetas] = useState([]);
@@ -37,6 +37,3 @@ const Inicio = () => {
 };
 
 export default Inicio;
-
-
-
