@@ -41,6 +41,11 @@ const Registro = () => {
                 placeholder="Ingrese un nombre de usuario"
                 {...register('nombreUsuario', {
                   required: 'El Nombre de Usuario es un dato obligatorio.',
+                  maxLength: {
+                    value: 30,
+                    message:
+                      'La cantidad máxima de caracteres es de 120 digitos',
+                  },
                   pattern: {
                     value: /^[A-Za-z]+$/,
                     message: 'Por favor, ingrese solo letras.',
@@ -56,6 +61,11 @@ const Registro = () => {
                 placeholder="Ingrese un email"
                 {...register('email', {
                   required: 'El Email es un dato obligatorio.',
+                  maxLength: {
+                    value: 120,
+                    message:
+                      'La cantidad máxima de caracteres es de 120 digitos',
+                  },
                   pattern: {
                     value:
                       /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/,
@@ -75,9 +85,9 @@ const Registro = () => {
                 {...register('password', {
                   required: 'El Password es un dato obligatorio.',
                   pattern: {
-                    value: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/,
+                    value: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,70}$/,
                     message:
-                      'La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.',
+                      'La contraseña debe tener al entre 8 y 70 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.',
                   },
                 })}
               />

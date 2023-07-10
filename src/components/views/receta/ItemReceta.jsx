@@ -44,7 +44,7 @@ const ItemReceta = ({ receta, setRecetas }) => {
 
   return (
     <tr>
-      <td className="tamanioCeldaFijo">{receta._id}</td>
+      <td className="tamanioCelda text-truncate">{receta._id}</td>
       <td className="tamanioCelda text-truncate">{receta.nombreReceta}</td>
       <td className="tamanioCelda text-truncate">{receta.imagen}</td>
       <td className="tamanioCeldaFijo">{receta.categoria}</td>
