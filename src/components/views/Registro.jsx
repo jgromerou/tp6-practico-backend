@@ -16,7 +16,7 @@ const Registro = () => {
       if (respuesta) {
         Swal.fire(
           'Bienvenido',
-          `${respuesta.nombreUsuario} registrado correctamente. Tiene que iniciar sesión`,
+          `${usuarioNuevo.nombreUsuario} registrado correctamente. Tiene que iniciar sesión`,
           'success'
         );
         navegacion('/login');
