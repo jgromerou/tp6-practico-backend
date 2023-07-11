@@ -1,13 +1,13 @@
 {
   "recetas": [
     {
-      "id": 1,
       "nombreReceta": "Tarta de fresas y albahaca",
       "descripcionReceta": "Combinar fresas y albahaca, ¿no te parece un acierto maravilloso? Por si te queda alguna duda, la receta de hoy las disipará todas con solo dar un mordisco a la maravillosa tarta de fresas y albahaca que hoy te muestro. Una tarta con mucho sabor y llena de aromas frescos y primaverales, perfecta para servir en cualquier momento del día.",
       "ingredientes": "150 g de mantequilla cortada en dados, 100 g de azúcar glas, 60 g de harina de almendra (almendras molidas muy finamente), 1 huevo, 1 pizca de sal, 250 g de harina",
       "instrucciones": "1. En un procesador de alimentos (a falta de él, en un bol amplio), bate la mantequilla hasta ablandarla a punto pomada.\n2. Añade el azúcar glas y la harina de almendra y mezcla.\n3.Añade la sal y el huevo y sigue mezclando hasta conseguir una consistencia homogénea.\n4. Añade la harina y mezcla el tiempo mínimo, lo justo hasta que esté integrada.\n5.Recoge la masa en una bola, envuélvela en film transparente y déjala en la nevera como mínimo una hora.\n6.Pasado ese tiempo, retírala del film y llévala a una superficie de trabajo enharinada.'\n7. Estírala con ayuda de un rodillo, dándole forma circular (los de mármol van estupendos en este tipo de masas, porque mantienen la masa fría más tiempo).\n8.Pasa la masa al molde perforado De Buyer con base extraíble (o a una bandeja perforada, disponiendo en ella un aro perforado) previamente engrasado.\n9.Baja la masa a la base y presiónala con los dedos hacia las paredes del molde (debe formar un ángulo recto entre paredes y base).\n10.Deja la masa en el molde tapada en film durante mínimo una hora (¡idealmente toda la noche!, hasta el día siguiente).\n11.Hecho el reposo, hornea la masa en el horno precalentado a 160 °C, durante 15 minutos.Transcurridos los 15 minutos, saca la masa del horno y reserva. Mantén el horno encendido.",
-      "imagen": "https://cdn.shopify.com/s/files/1/0191/9978/files/1_5f502ef5-6c01-4694-b1ed-be0fb7ff2904.jpg?v=1686237776",
-      "categoria": "Dulce"
+      "imagen": "https://cdn.shopify.com/s/files/1/0191/9978/files/1_5f502ef5-6c01-4694-b1ed-be0fb7ff2904.jpg",
+      "categoria": "Dulce",
+      "id": 1
     },
     {
       "id": 2,

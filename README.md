@@ -1,14 +1,10 @@
-# Ejercicio 14 del TP1: Blog de recetas de cocinas - React ![React Icon](./src/assets/react.svg)
+# Ejercicio 6 del TP Backend: Blog de recetas de cocinas Frontend - React ![React Icon](./src/assets/react.svg)
 
 ## Descripción
 
-Crea una aplicación web, que permita mostrar un blog de recetas de cocina en una
-página, desde otra pagina debo poder agregar, modificar o quitar las recetas y
-estas deben estar almacenadas en el localstorage o json-server.
-
-## Link Versión en Producción
-
-[Netlify](https://ej14-react-apprecetas.netlify.app/)
+Unir el proyecto de backend desarrollado en el punto anterior, con el blog de
+recetas realizado en el módulo de react, agregar además el login y registro de
+usuario para poder interactuar con los endpoints creados en el punto anterior.
 
 ## Tecnologias / Herramientas 🛠
 
@@ -21,23 +17,12 @@ estas deben estar almacenadas en el localstorage o json-server.
 - [SweetAlert2](https://sweetalert2.github.io/)
 - [Markdown](https://markdown.es/)
 
-## Para entorno **Local - Desarrollo**:
+## Para entorno **Local**:
 
 creamos el archivo .env y agregamos las siguientes variables de entorno
 
-- VITE_API_USUARIOS=http://localhost:3004/usuarios
-- VITE_API_RECETAS=http://localhost:3004/recetas
-
-## Para entorno de **Producción**:
-
-se agrega las siguienteas variables de entorno
-
-- VITE_API_USUARIOS=https://my-json-server.typicode.com/jgromerou/ej14-practico1-react/usuarios
-- VITE_API_RECETAS=https://my-json-server.typicode.com/jgromerou/ej14-practico1-react/recetas
-
-## Comando para ejecutar json-server local
-
-json-server --watch db.json --port 3004
+- VITE_API_USUARIOS=http://localhost:4000/apirecetas/auth
+- VITE_API_RECETAS=http://localhost:3004/apirecetas/recetas
 
 ## Pasos para clonar y ejecutar la Aplicación 🖥
 
@@ -46,7 +31,7 @@ Sigue estos pasos para clonar y ejecutar la aplicación en tu entorno local:
 1.  **Clona el repositorio:** En tu línea de comandos, ejecuta el siguiente comando para clonar el repositorio:
 
     ```
-    git clone https://github.com/jgromerou/ej14-practico1-react.git
+    git clone https://github.com/jgromerou/ej6-practico-backend.git
     ```
 
 2.  **Accede al directorio:** Ve al directorio de la aplicación clonada:
@@ -69,7 +54,10 @@ Sigue estos pasos para clonar y ejecutar la aplicación en tu entorno local:
 
 5.  **Accede a la aplicación:** Abre tu navegador web y visita la siguiente URL: _http://localhost:5173_. La aplicación debería cargarse y estar lista para usar.
 
-## Autores
+## Repositorio Backend
 
-1. Emilia Belén Ramos [github](https://github.com/emiliabelen)
-2. Juan Gerardo Romero Uro [github](https://github.com/jgromerou)
+[Backend del Blog de Recetas de Cocina](https://github.com/jgromerou/ej5-practico-backend)
+
+## Autor
+
+1. Juan Gerardo Romero Uro [github](https://github.com/jgromerou)

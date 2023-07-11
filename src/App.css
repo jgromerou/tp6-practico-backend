@@ -53,6 +53,10 @@ h3 {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  height: 250px;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
 }
 
 .imgCard {
@@ -79,5 +83,9 @@ h3 {
   }
   .alturaTitulo {
     min-height: 4rem;
+  }
+
+  .imgbanner {
+    height: 500px;
   }
 }

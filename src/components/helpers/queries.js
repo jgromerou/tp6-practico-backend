@@ -3,20 +3,18 @@ const URLUsuarios = import.meta.env.VITE_API_USUARIOS;
 
 export const login = async (usuario) => {
   try {
-    const respuesta = await fetch(URLUsuarios);
-    const listaUsuarios = await respuesta.json();
-    const usuarioBuscado = listaUsuarios.find(
-      (itemUsuario) => itemUsuario.email === usuario.email
-    );
-    if (usuarioBuscado) {
-      if (usuarioBuscado.password === usuario.password) {
-        return usuarioBuscado;
-      } else {
-        return null;
-      }
-    } else {
-      return null;
-    }
+    const respuesta = await fetch(URLUsuarios, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(usuario),
+    });
+    const datos = await respuesta.json();
+    return {
+      status: respuesta.status,
+      nombreUsuario: datos.nombreUsuario,
+    };
   } catch (error) {
     console.log(error);
   }
@@ -24,7 +22,7 @@ export const login = async (usuario) => {
 
 export const registrar = async (usuarioNuevo) => {
   try {
-    const respuesta = await fetch(`${URLUsuarios}`, {
+    const respuesta = await fetch(`${URLUsuarios}/usuarios`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

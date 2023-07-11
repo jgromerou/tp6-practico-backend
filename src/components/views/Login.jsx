@@ -15,8 +15,9 @@ const Login = ({ setUsuarioLogueado }) => {
 
   const onSubmit = (usuario) => {
     login(usuario).then((respuesta) => {
-      if (respuesta) {
-        sessionStorage.setItem('usuario', JSON.stringify(respuesta));
+      if (respuesta && respuesta.status === 200) {
+        const { status, ...respuestaRestante } = respuesta;
+        sessionStorage.setItem('usuario', JSON.stringify(respuestaRestante));
         Swal.fire(
           'Bienvenido',
           `${respuesta.nombreUsuario} iniciaste sesion correctamente`,
@@ -63,9 +64,9 @@ const Login = ({ setUsuarioLogueado }) => {
                 {...register('password', {
                   required: 'El password es un dato obligatorio',
                   pattern: {
-                    value: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/,
+                    value: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,70}$/,
                     message:
-                      'El password debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.',
+                      'El password debe tener entre 8 y 70 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.',
                   },
                 })}
               />
