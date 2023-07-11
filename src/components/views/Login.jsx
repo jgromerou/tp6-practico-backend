@@ -64,9 +64,9 @@ const Login = ({ setUsuarioLogueado }) => {
                 {...register('password', {
                   required: 'El password es un dato obligatorio',
                   pattern: {
-                    value: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/,
+                    value: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,70}$/,
                     message:
-                      'El password debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.',
+                      'El password debe tener entre 8 y 70 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.',
                   },
                 })}
               />
