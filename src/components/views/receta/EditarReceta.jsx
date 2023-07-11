@@ -43,7 +43,7 @@ const EditarReceta = () => {
     consultaEditarReceta(receta, id).then((respuestaEditado) => {
       if (respuestaEditado && respuestaEditado.status === 200) {
         Swal.fire(
-          'REceta Editada',
+          'Receta Editada',
           `La receta ${receta.nombreReceta} fue editada correctamente`,
           'success'
         );
