@@ -20,8 +20,6 @@ const EditarReceta = () => {
   useEffect(() => {
     consultaReceta(id).then((respuesta) => {
       if (respuesta) {
-        console.log('tengo que cargar el objeto en el formulario');
-        console.log(respuesta);
         setValue('nombreReceta', respuesta.nombreReceta);
         setValue('descripcionReceta', respuesta.descripcionReceta);
         setValue('ingredientes', respuesta.ingredientes);
@@ -39,7 +37,6 @@ const EditarReceta = () => {
   }, []);
 
   const onSubmit = (receta) => {
-    console.log(receta);
     consultaEditarReceta(receta, id).then((respuestaEditado) => {
       if (respuestaEditado && respuestaEditado.status === 200) {
         Swal.fire(
