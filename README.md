@@ -2,13 +2,9 @@
 
 ## Descripción
 
-Crea una aplicación web, que permita mostrar un blog de recetas de cocina en una
-página, desde otra pagina debo poder agregar, modificar o quitar las recetas y
-estas deben estar almacenadas en el backend.
-
-## Link Versión en Producción
-
-(aún no disponible)
+Unir el proyecto de backend desarrollado en el punto anterior, con el blog de
+recetas realizado en el módulo de react, agregar además el login y registro de
+usuario para poder interactuar con los endpoints creados en el punto anterior.
 
 ## Tecnologias / Herramientas 🛠
 
@@ -21,7 +17,7 @@ estas deben estar almacenadas en el backend.
 - [SweetAlert2](https://sweetalert2.github.io/)
 - [Markdown](https://markdown.es/)
 
-## Para entorno **Local - Desarrollo**:
+## Para entorno **Local**:
 
 creamos el archivo .env y agregamos las siguientes variables de entorno
 
@@ -57,6 +53,10 @@ Sigue estos pasos para clonar y ejecutar la aplicación en tu entorno local:
     ```
 
 5.  **Accede a la aplicación:** Abre tu navegador web y visita la siguiente URL: _http://localhost:5173_. La aplicación debería cargarse y estar lista para usar.
+
+## Repositorio Backend
+
+[Backend del Blog de Recetas de Cocina](https://github.com/jgromerou/ej5-practico-backend)
 
 ## Autor
 
