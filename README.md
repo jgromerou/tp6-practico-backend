@@ -6,6 +6,10 @@ Unir el proyecto de backend desarrollado en el punto anterior, con el blog de
 recetas realizado en el módulo de react, agregar además el login y registro de
 usuario para poder interactuar con los endpoints creados en el punto anterior.
 
+## Link Versión en Producción
+
+[Netlify](https://blogrecetascocina-rollingcode-romerou.netlify.app/)
+
 ## Tecnologias / Herramientas 🛠
 
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
@@ -22,7 +26,7 @@ usuario para poder interactuar con los endpoints creados en el punto anterior.
 creamos el archivo .env y agregamos las siguientes variables de entorno
 
 - VITE_API_USUARIOS=http://localhost:4000/apirecetas/auth
-- VITE_API_RECETAS=http://localhost:3004/apirecetas/recetas
+- VITE_API_RECETAS=http://localhost:4000/apirecetas/recetas
 
 ## Pasos para clonar y ejecutar la Aplicación 🖥
 
